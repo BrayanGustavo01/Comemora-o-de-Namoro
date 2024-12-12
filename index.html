@@ -48,12 +48,52 @@
     <div class="photo-grid">
         <img src="imagens/Image (2).jpg" alt="Foto 2">
         <img src="imagens/Image (3).jpg" alt="Foto 3">
-        <img src="imagens/Image (1).jpg" alt="Foto 1">
         <img src="imagens/Image.jpg" alt="Foto 6">
+        <img src="imagens/Image (1).jpg" alt="Foto 1">
+       
 </section>
 <div class="heart-animation"></div>
 
 <h1 class="typing-text">Eu te amo para sempre...</h1>
+
+<section id="contagem" class="contagem-regressiva">
+    <h2>Contagem Regressiva para Nosso Dia Especial</h2>
+    <div id="contador">
+        <span id="dias">0</span> Dias
+        <span id="horas">0</span> Horas
+        <span id="minutos">0</span> Minutos
+        <span id="segundos">0</span> Segundos
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script>
+    const eventoData = new Date("2025-06-30T16:43:50").getTime();
+
+    function atualizarContagem() {
+        const agora = new Date().getTime();
+        const distancia = eventoData - agora;
+
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        document.getElementById("dias").innerText = dias;
+        document.getElementById("horas").innerText = horas;
+        document.getElementById("minutos").innerText = minutos;
+        document.getElementById("segundos").innerText = segundos;
+
+        if (distancia < 0) {
+            clearInterval(contagem);
+            document.getElementById("contador").innerHTML = "O Grande Dia Chegou! 🎉";
+        }
+    }
+
+    const contagem = setInterval(atualizarContagem, 1000);
+</script>
+</body>
+</html>
 
 
 
@@ -64,3 +104,4 @@
 
 </body>
 </html>
+
