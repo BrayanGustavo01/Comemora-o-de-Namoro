@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ff9a9e;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background:  #ff6666;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.timeline {
+    margin-top: 40px;
+}
+
+.timeline h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.moment {
+    background: #a52f2f;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.moment img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    color: #b24747;
+}
+
+/* Galeria de fotos */
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Animação de entrada suave */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Botão pulsante */
+button {
+    padding: 10px 20px;
+    background: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #e55d5d;
+}
+/* Efeito de zoom nas fotos */
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+/* Animação ao aparecer na rolagem */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease;
+}
+  /* Corações flutuantes */
+.heart-animation::before, .heart-animation::after {
+    content: "❤️";
+    font-size: 2em;
+    position: absolute;
+    animation: floatHearts 5s infinite ease-in-out;
+}
+
+.heart-animation::before {
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
+.heart-animation::after {
+    left: 70%;
+    animation-delay: 1.5s;
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(100px) scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Estilo básico das imagens */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Galeria de fotos */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
