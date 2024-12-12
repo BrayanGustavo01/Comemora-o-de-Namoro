@@ -190,3 +190,26 @@ img {
     text-align: center;
 }
 
+/* Contagem regressiva */
+.countdown {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2em;
+    color: #ff6666;
+}
+
+#timer div {
+    text-align: center;
+}
+
+#timer span {
+    font-size: 3em;
+    font-weight: bold;
+}
+
