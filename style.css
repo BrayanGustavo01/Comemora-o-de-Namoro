@@ -114,18 +114,7 @@ button:hover {
     transform: scale(1.1);
     background: #e55d5d;
 }
-/* Efeito de zoom nas fotos */
-.photo-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-}
 
-.photo-grid img:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
-}
 /* Animação ao aparecer na rolagem */
 .show {
     opacity: 1;
@@ -212,4 +201,3 @@ img {
     font-size: 3em;
     font-weight: bold;
 }
-
