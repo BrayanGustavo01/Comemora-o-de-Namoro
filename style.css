@@ -3,19 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #ff9a9e;
-    color: #333;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #fff;
     line-height: 1.6;
     text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
-    background:  #ff6666;
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 50px 20px;
 }
@@ -29,6 +32,15 @@ p {
     font-size: 1.2em;
 }
 
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
 .timeline {
     margin-top: 40px;
 }
@@ -39,7 +51,7 @@ p {
 }
 
 .moment {
-    background: #a52f2f;
+    background:rgba(0, 0, 0, 0.6);
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
@@ -79,10 +91,6 @@ footer {
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
-}
-
-.photo-grid img:hover {
-    transform: scale(1.1);
 }
 
 /* Animação de entrada suave */
@@ -200,4 +208,15 @@ img {
 #timer span {
     font-size: 3em;
     font-weight: bold;
+}
+
+button {
+    background:rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
