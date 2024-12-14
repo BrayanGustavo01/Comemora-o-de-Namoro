@@ -1,4 +1,5 @@
 
+
 setInterval(countdown, 1000);
 
 // Animação de rolagem
@@ -34,3 +35,4 @@ const countdownTimer = () => {
 };
 
 setInterval(countdownTimer, 1000);
+
