@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--    ARRUMAR 
-    <audio controls loop preload="none">
-        <source src="musica/music.mp3" type="audio/mpeg">
-        Seu navegador não suporta a tag audio.
-    </audio>
--->
+
+    <audio id="audioPlayer" autoplay loop muted preload="auto" src="musica/music.mp3"></audio>
+    
 <header>
     <h1 class="fade-in">Meu amor, cada momento ao seu lado é um presente precioso. Que nossa história continue sendo escrita com sorrisos, carinho e amor infinito. Obrigado por ser a melhor parte dos meus dias. Te amo hoje e sempre! ❤️ </h1>
 </header>
@@ -103,6 +100,15 @@
     }
 
     const contagem = setInterval(atualizarContagem, 1000);
+
+
+    // JS música
+    var audio = document.getElementById('audioPlayer');
+
+        window.addEventListener('click', function() {
+            audio.muted = false;
+            audio.play(); 
+        });
 
 </script>
 </body>
