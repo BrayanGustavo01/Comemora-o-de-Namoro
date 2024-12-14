@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!--    ARRUMAR 
+    <audio controls loop preload="none">
+        <source src="musica/music.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag audio.
+    </audio>
+-->
 <header>
-    <h1 class="fade-in">Feliz 6 meses de namoro, meu amor! Como é bom saber que nossa vida é melhor por termos um ao outro. Amo você! </h1>
+    <h1 class="fade-in">Meu amor, cada momento ao seu lado é um presente precioso. Que nossa história continue sendo escrita com sorrisos, carinho e amor infinito. Obrigado por ser a melhor parte dos meus dias. Te amo hoje e sempre! ❤️ </h1>
 </header>
 
 <section class="timeline">
@@ -45,25 +50,33 @@
 
 <section class="gallery">
     <h2>Nossos Momentos</h2>
+    <br>
     <div class="photo-grid">
-        <img src="imagens/Image (2).jpg" alt="Foto 2">
-        <img src="imagens/Image (3).jpg" alt="Foto 3">
-        <img src="imagens/Image.jpg" alt="Foto 6">
-        <img src="imagens/Image (1).jpg" alt="Foto 1">
+        <img src="imagens/Image (2).jpg" alt="Foto ">
+        <img src="imagens/Image (3).jpg" alt="Foto 1">
+        <img src="imagens/Image.jpg" alt="Foto 2">
+        <img src="imagens/Image (1).jpg" alt="Foto 3">
+        <img src="imagens/Image (4).jpg" alt="Foto 4">
+        <img src="imagens/Image (5).jpg" alt="Foto 5">
+        <img src="imagens/Image (6).jpg" alt="Foto 6">
+        <img src="imagens/Image (8).jpg" alt="Foto 8">
 </section>
 <div class="heart-animation"></div>
 
-<h1 class="typing-text">Eu te amo para sempre...</h1>
-
-<section id="contagem" class="contagem-regressiva">
-    <h2>Contagem Regressiva para Nosso Dia Especial</h2>
-    <div id="contador">
-        <span id="dias">0</span> Dias
-        <span id="horas">0</span> Horas
-        <span id="minutos">0</span> Minutos
-        <span id="segundos">0</span> Segundos
-    </div>
-</section>
+<br>
+<button class="button" onclick="alert('Amor, hoje celebramos 6 meses de uma jornada linda juntos. Sou imensamente grato por cada sorriso, abraço e momento especial que compartilhamos. Obrigado por trazer tanta alegria e amor para minha vida. Que venham muitos mais meses e anos ao seu lado. Te amo infinitamente! ❤️')">Surpresinha</button>
+<br>
+<div class="container">
+    <section id="contagem" class="contagem-regressiva">
+        <h2>Contagem Regressiva para Nosso Dia Especial</h2>
+        <div id="contador">
+            <span id="dias">0</span> Dias
+            <span id="horas">0</span> Horas
+            <span id="minutos">0</span> Minutos
+            <span id="segundos">0</span> Segundos
+        </div>
+    </section>
+</div>
 
 <script src="script.js"></script>
 <script>
@@ -90,6 +103,7 @@
     }
 
     const contagem = setInterval(atualizarContagem, 1000);
+
 </script>
 </body>
 </html>
